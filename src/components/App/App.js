@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './uscsa-logo.png';
 import './App.css';
-import './skeleton.css';
+import '../../css/skeleton.css';
 import NavBar from '../NavBar/NavBar.js';
 import Home from '../Home/Home.js';
 import Schedule from '../Schedule/Schedule.js';

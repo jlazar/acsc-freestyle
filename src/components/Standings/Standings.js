@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './normalize.css';
-import './skeleton.css';
+import '../../css/normalize.css';
+import '../../css/skeleton.css';
 
 class Standings extends Component {
   constructor(props) {
