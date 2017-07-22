@@ -5,7 +5,7 @@ import '../../css/skeleton.css';
 import NavBar from '../NavBar/NavBar.js';
 import Home from '../Home/Home.js';
 import Schedule from '../Schedule/Schedule.js';
-import Profile from '../Profile/Profile.js';
+import Athletes from '../Athletes/Athletes.js';
 import Standings from '../Standings/Standings.js';
 import Footer from '../Footer/Footer.js';
 
@@ -34,7 +34,7 @@ class App extends Component {
         <div>
           {this.state.navClicked === 'Home' ? <Home /> : null}
           {this.state.navClicked === 'Schedule' ? <Schedule /> : null}
-          {this.state.navClicked === 'Profile' ? <Profile /> : null}
+          {this.state.navClicked === 'Athletes' ? <Athletes /> : null}
           {this.state.navClicked === 'Standings' ? <Standings /> : null}
         </div>
         <Footer />

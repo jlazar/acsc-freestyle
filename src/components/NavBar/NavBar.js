@@ -63,9 +63,9 @@ class NavBar extends Component {
               <li className="navbar-item">
                 <a
                   className="navbar-link"
-                  onClick={this.onClick.bind(this, 'Profile')}
+                  onClick={this.onClick.bind(this, 'Athletes')}
                 >
-                  Profile
+                  Athletes
                 </a>
               </li>
               <li className="navbar-item">
