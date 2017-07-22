@@ -1,0 +1,44 @@
+.schedule {
+    margin-top: 15px;
+}
+
+.schedule-row {
+    display: inline-block;
+    border: 1px solid #eee;
+    display: inline-flex;
+    border: 1px solid #eee;
+    width: 100%;
+    font-size: 20px;
+}
+
+.schedule-location.schedule-location-header {
+    padding-top: 0;
+}
+
+.schedule-location {
+    width: 33%;
+    border-right: 1px solid #eee;
+    padding-left: 20px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.schedule-date.schedule-date-header {
+    padding-top: 0;
+}
+
+.schedule-date {
+    width: 33%;
+    border-right: 1px solid #eee;
+    padding-left: 20px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.schedule-results {
+    width: 33%;
+}
+
+.schedule-results-btn {
+    margin-top: 1rem;
+}

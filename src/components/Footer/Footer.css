@@ -1,0 +1,12 @@
+.footer {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+}
+.footer-list {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.footer-item {
+    display: inline-block;
+}

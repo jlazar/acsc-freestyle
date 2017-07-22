@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 70px;
+  position: absolute;
+  left: 10px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 70px;
+  padding: 20px;
+  width: calc(100% - 40px);
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-title {
+  line-height: inherit;
+}
