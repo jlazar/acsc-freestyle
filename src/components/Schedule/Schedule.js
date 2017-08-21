@@ -3,13 +3,22 @@ import '../../css/normalize.css';
 import '../../css/skeleton.css';
 import './Schedule.css';
 import store from '../../services/store.service.js';
+import 'elemental/less/elemental.less'
+import {Modal, ModalHeader, ModalBody, ModalFooter, Button} from 'elemental'
 
 class Schedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      events: store.events || []
+      events: store.events || [],
+      modalIsOpen: true
     };
+  }
+
+  toggleModal() {
+    this.setState({
+      modalIsOpen: !this.state.modalIsOpen
+    })
   }
 
   componentDidMount() {
@@ -50,9 +59,17 @@ class Schedule extends Component {
           )}
         </ul>
         <div className="schedule-results">
-          <button className="button-primary">Create New Event</button>
+          <button className="button-primary" onClick={this.toggleModal.bind(this)}>Create New Event</button>
         </div>
       </div>
+      <Modal isOpen={this.state.modalIsOpen} onCancel={this.toggleModal.bind(this)} backdropClosesModal>
+        <ModalHeader text="Lots of text to show scroll behavior" showCloseButton onClose={this.toggleModal.bind(this)} />
+        <ModalBody>test</ModalBody>
+        <ModalFooter>
+          <Button type="primary" onClick={this.toggleModal.bind(this)}>Close modal</Button>
+          <Button type="link-cancel" onClick={this.toggleModal.bind(this)}>Also closes modal</Button>
+        </ModalFooter>
+      </Modal>
     </div>;
   }
 }

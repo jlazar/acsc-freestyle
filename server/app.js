@@ -11,8 +11,7 @@ const athletes = require('./athletes.queries');
 const events = require('./events.queries');
 const results = require('./results.queries');
 
-
-var router = express.Router();
+let router = express.Router();
 
 //parse the form data
 app.use(bodyParser.urlencoded());
@@ -38,8 +37,7 @@ router.delete('/results/:athlete_id/:event_id', results.removeResult);
 
 app.use('/api', router);
 
-
-var home = __dirname.split('/server')[0];
+let home = __dirname.split('/server')[0];
 app.use(express.static(path.join(home, 'build')));
 
 module.exports = app;
