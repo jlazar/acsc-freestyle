@@ -9,7 +9,6 @@ const pgp = require('pg-promise')(options);
 const connectionString = 'postgres://localhost:5432/acsc_db';
 const db = pgp(connectionString);
 
-
 // Event Functions *********************
 async function getAllEvents(req, res, next) {
   let data;
